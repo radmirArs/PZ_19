@@ -11,14 +11,14 @@ namespace PZ_19
         public override double CalculateArea(params double[] number)
         {
             if (number.Length != 1)
-                throw new ArgumentException("Для окружности нужен радиус");
+                throw new ArgumentException();
             return Math.PI * number[0] * number[0];
         }
 
         public override double CalculatePerimeter(params double[] number)
         {
             if (number.Length != 1)
-                throw new ArgumentException("Для окружности нужен радиус");
+                throw new ArgumentException();
             return 2 * Math.PI * number[0];
         }
     }

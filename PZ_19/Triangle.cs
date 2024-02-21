@@ -11,14 +11,14 @@ namespace PZ_19
         public override double CalculateArea(params double[] number)
         {
             if (number.Length != 3)
-                throw new ArgumentException("Для треугольника нужно три параметра: основание и высота");
+                throw new ArgumentException();
             return 0.5 * number[0] * number[1];
         }
 
         public override double CalculatePerimeter(params double[] number)
         {
             if (number.Length != 3)
-                throw new ArgumentException("Для треугольника нужно три параметра: сторона 1, сторона 2, сторона 3");
+                throw new ArgumentException();
             return number[0] + number[1] + number[2];
         }
     }
